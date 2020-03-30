@@ -52,7 +52,7 @@ app.post("/",function(req,res){
   const url = "https://us19.api.mailchimp.com/3.0/lists/20e4aced91";
   const options = {
     method:"POST",
-    auth:"belgin:fbb0aa34ff2606f3a32efd9fc29ea62-us19"
+    auth:"belgin:efbb0aa34ff2606f3a32efd9fc29ea62-us19"
   }
 
   const request = https.request(url,options,function(response){
