@@ -1,2 +1,2 @@
 # newsletter-signup-reactapp
-Newsletter subscription react app using mailchimp api
+Newsletter subscription node js app using mailchimp api
