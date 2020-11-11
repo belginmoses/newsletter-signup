@@ -9,8 +9,8 @@ const app = express();
 require('dotenv').config({path: __dirname + '/.env'})
 
 
-var apiKey = MAILCHIMP_API_KEY;
-var audID = "20e4aced91";
+var apiKey = process.env.MAILCHIMP_API_KEY;
+var audID = process.env.MAILCHIMP_AUD_ID;
 
 // app.listen(3000,function(req,res){
 //   console.log("Server is running on port 3000.");
@@ -52,7 +52,7 @@ app.post("/",function(req,res){
   }
 
   const jsonData =  JSON.stringify(data);
-  const url = "https://us19.api.mailchimp.com/3.0/lists/20e4aced91";
+  const url = "https://us19.api.mailchimp.com/3.0/lists/"+audID;
   const options = {
     method:"POST",
     auth:"belgin:"+apiKey
